@@ -27,7 +27,7 @@ public class FurnitureOrder implements FurnitureOrderInterface {
     }
 
     public HashMap<Furniture, Integer> getOrderedFurniture() {
-        return furnitures;
+        return new HashMap<Furniture,Integer>(furnitures);
     }
 
     public float getTotalOrderCost() {
